@@ -31,7 +31,8 @@ int print_pointer(va_list);
 int print_rev_string(va_list);
 
 /* _putchar.c */
-int _putchar(char c);
+int _putchar(char);
+int buffer(char);
 
 /**
  * struct _format - Typedef struct
