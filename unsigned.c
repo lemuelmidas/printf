@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_unsigned - Print a unsigned int
+ * print_unsigned - Print an unsigned int
  * @list: Number to print
  *
  * Return: Length of the number

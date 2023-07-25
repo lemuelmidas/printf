@@ -4,7 +4,7 @@
  * print_octal - Print a unsigned octal
  * @list: Number to print
  *
- * Return: Length of the number
+ * Return: Length of number
  **/
 int print_octal(va_list list)
 {
