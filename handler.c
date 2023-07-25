@@ -3,7 +3,7 @@
 /**
  * handler - Format controller
  * @str: String format
- * @list: List of arguments
+ * @list: List of argument
  *
  * Return: Total size of arguments with the total size of the base string
  **/
