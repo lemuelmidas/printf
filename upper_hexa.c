@@ -7,7 +7,7 @@ char *string_to_upper(char *);
  * print_hexadecimal_upp - Print a number in hexadecimal format
  * @list: Number to print
  *
- * Return: Length of the number
+ * Return: Length of number
  **/
 int print_hexadecimal_upp(va_list list)
 {
