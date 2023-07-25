@@ -2,11 +2,7 @@
 
 
 /**
-<<<<<<< HEAD
  * _strlen -a program to calculate the length of a string
-=======
- * _strlen - Calculate length of a string
->>>>>>> 7a2c12eaa7e79cbc93c41f9d08046a5de6f4a03f
  * @str: String
  *
  * Return: Length
