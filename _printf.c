@@ -1,43 +1,30 @@
 #include "main.h"
-#include <stdarg.h>
-#include <stdio.h>
 
-int _printf(const char *format, ...) {
-    va_list args;
-    va_start(args, format);
-    
-    int count = 0;
-    for (const char *p = format; *p != '\0'; p++) {
-        if (*p != '%') {
-            putchar(*p);
-            count++;
-        } else {
-            p++;  // skip the '%'
-            switch (*p) {
-                case 'c': {
-                    char c = va_arg(args, int);  // char arguments are promoted to int
-                    putchar(c);
-                    count++;
-                    break;
-                }
-                case 's': {
-                    char *s = va_arg(args, char *);
-                    while (*s) {
-                        putchar(*s);
-                        count++;
-                        s++;
-                    }
-                    break;
-                }
-                case '%':
-                    putchar('%');
-                    count++;
-                    break;
-            }
-        }
-    }
-    
-    va_end(args);
-    
-    return count;
+/**
+ * _printf - Produces output according to a format
+ * @format: Is a character string. The format string
+ * is composed of zero or more directives
+ *
+ * Return: The number of characters printed (excluding
+ * the null byte used to end output to strings)
+ **/
+int _printf(const char *format, ...)
+{
+	int size;
+	va_list args;
+
+	if (format == NULL)
+		return (-1);
+
+	size = _strlen(format);
+	if (size <= 0)
+		return (0);
+
+	va_start(args, format);
+	size = handler(format, args);
+
+	_putchar(-1);
+	va_end(args);
+
+	return (size);
 }
