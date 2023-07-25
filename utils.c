@@ -2,34 +2,34 @@
 
 
 /**
- * _strlen - Calculate the length of a string
+ * _strlen -a program to calculate the length of a string
  * @str: String
  *
  * Return: Length
  **/
 int _strlen(const char *str)
 {
-	int i;
+	int l;
 
-	for (i = 0; str[i] != 0; i++)
+	for (l = 0; str[l] != 0; l++)
 		;
 
-	return (i);
+	return (l);
 }
 
 /**
- * print - print char.
+ * print - a program to print char.
  * @str: string.
  *
- * Return: string length.
+ * Return: length of string
  */
 
 int print(char *str)
 {
-	int i;
+	int c;
 
-	for (i = 0; str[i] != '\0'; ++i)
-		_putchar(str[i]);
+	for (c = 0; str[c] != '\0'; ++c)
+		_putchar(str[c]);
 
-	return (i);
+	return (c);
 }
