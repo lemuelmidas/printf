@@ -2,7 +2,7 @@
 
 /**
  * print_binary - Print a number in base 2
- * @list: Number to print in base 2
+ * @list: Number to be printed in base 2
  *
  * Return: Length of the numbers in binary
  **/
